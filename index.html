@@ -12,37 +12,39 @@
 <style> 
   ul {
   list-style-type: none;
-  margin: 10;
-  padding: 10;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Aligns list items in a row */
+  width: 100%; /* Makes the list span the full width of the page */
+
 }
 
 li {
-  float: left;
-}
+    flex: 1; /* Makes all list items take up an equal portion of the width */
+  }
 
 li a {
-  display: block;
-  padding: 8px;
-  background-color: #aed1e3;
-  color: #493a2d;  /* Sets the text color to black */
-  text-decoration: none; /*Removes underline from links */
-}
+    display: block;
+    padding: 10px; /* Adds padding for better spacing */
+    background-color: #aed1e3; /* brown */
+    color: #493a2d; /* blue*/
+    text-decoration: none; /* Removes underline from links */
+    text-align: center; /* Centers the text inside the link */
+    width: 100%; /* Ensures the link spans the full width */
+  }
+
   
    body {
   font-family: "futura-pt", sans-serif; /* Sets the font to futura */
-  font-weight: 500;
-  font-style: normal;
         }
   
 </style>
   
 <body> 
-
-  
   <ul>
-  <li><a href="#home">Physical art</a></li>
-  <li><a href="#news">Digital art</a></li>
-  <li><a href="#contact">Marketing</a></li>
+  <li><a href="#Physical art">Physical art</a></li>
+  <li><a href="#Digital art">Digital art</a></li>
+  <li><a href="#Marketing">Marketing</a></li>
 </ul>
 </body>
 </html>
