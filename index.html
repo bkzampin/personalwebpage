@@ -36,25 +36,57 @@
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: e2f1fb;/* light blue */
+  background-color: #e2f1fb;/* light blue */
   color: #493a2d;/* brown */
 }
+  
+  .footer {
+  background-color: #e2f1fb;
+  padding: 10px;
+  text-align: center;
+}
+
 
    body {
   font-family: "futura-pt", sans-serif; /* Sets the font to futura */
         }
     h1 {
    color: #493a2d; /* brown*/
-    font-size: 100px; /* Sets the font size of <h1> to 200px */
+    font-size: 100px; /* Sets the font size of <h1> to 100px */
     text-align: right; /* Centers the text horizontally */
     margin: 10; /* Removes default margin */
   }
       h2 {
    color: #493a2d; /* brown*/
-    font-size: 20px; /* Sets the font size of <h1> to 200px */
+    font-size: 20px; /* Sets the font size of <h1> to 20px */
     text-align: right; /* Centers the text horizontally */
     margin: 10; /* Removes default margin */
   }
+   h3 {
+   color: #493a2d; /* brown*/
+    font-size: 100px; /* Sets the font size of <h1> to 100px */
+    text-align: Left; /* Centers the text horizontally */
+    margin: 10; /* Removes default margin */
+  }
+  /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+
   
 </style>
   
@@ -79,6 +111,32 @@
   <h2>
   Im Brianna! I have completed my first year at the University of Waterloo, majoring in Global Business & Digital Arts, based at the Stratford School of Interaction Business and Design. My studies have focused on foundation courses on computer science, languages (Italian & French) and creative arts design, economics and marketing.
   </h2>
+  
+  <h3>
+   RESUME 
+  </h3>
+  
+<div class="row">
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+<div class="footer">
+<p>Footer</p>
+</div>
+  
+
 </html>
 
 
